@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>K2 Dynamic Island | Next-Gen Fluid Desktop Capsule for Windows</title>
+  <meta name="description" content="An elegant, ultra-modern Windows desktop capsule inspired by the Dynamic Island paradigm. Native C++17, real-time audio activity, smooth marquee music scrolling, and seamless file workflows.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    code, pre { font-family: 'JetBrains Mono', monospace; }
+  </style>
+</head>
+<body class="bg-[#030712] text-slate-100 min-h-screen flex flex-col justify-between selection:bg-cyan-500 selection:text-black">
+
+  <!-- Ambient Backdrop Glows -->
+  <div class="fixed top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-96 bg-gradient-to-b from-cyan-500/10 via-indigo-500/5 to-transparent blur-3xl pointer-events-none -z-10"></div>
+
+  <!-- Navigation Bar -->
+  <header class="max-w-6xl mx-auto w-full px-6 py-6 flex justify-between items-center border-b border-slate-800/80">
+    <div class="flex items-center gap-3">
+      <div class="w-8 h-8 rounded-full bg-slate-900 border border-cyan-500/40 flex items-center justify-center shadow-lg shadow-cyan-500/20">
+        <div class="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-pulse"></div>
+      </div>
+      <div>
+        <span class="font-extrabold text-lg tracking-tight text-white">K2 <span class="text-cyan-400">Dynamic Island</span></span>
+        <span class="ml-2 px-2 py-0.5 text-[10px] font-bold rounded-full bg-cyan-950 text-cyan-400 border border-cyan-800/60 uppercase tracking-wider">Windows 10 / 11</span>
+      </div>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="https://kimsokun.github.io/" target="_blank" class="text-xs font-semibold text-slate-400 hover:text-slate-200 transition">
+        Developer ↗
+      </a>
+      <a href="downloads/K2DynamicIsland-Setup.exe" class="px-4 py-2 text-xs font-bold rounded-xl bg-cyan-500 hover:bg-cyan-400 text-black transition shadow-lg shadow-cyan-500/20">
+        Download v1.0.0
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main class="max-w-6xl mx-auto w-full px-6 pt-12 pb-20 flex-1 flex flex-col items-center text-center">
+    
+    <!-- Top Pill Badge -->
+    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900/90 border border-slate-800 text-slate-300 text-xs font-medium mb-8 backdrop-blur-md">
+      <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+      <span>Latest Release v1.0.0 &bull; 100% Free &amp; Standalone Installer</span>
+    </div>
+
+    <!-- Main Headline -->
+    <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight mb-6 max-w-4xl">
+      The Next-Generation <br class="hidden sm:block"/>
+      <span class="bg-gradient-to-r from-cyan-400 via-sky-300 to-indigo-400 bg-clip-text text-transparent">Fluid Desktop Capsule</span>
+    </h1>
+
+    <!-- Subtitle -->
+    <p class="max-w-2xl text-slate-400 text-base sm:text-lg leading-relaxed mb-10">
+      Elevate your Windows workflow with an intelligent OLED floating island. Real-time audio activity equalizers, smooth marquee music scrolling, drag-and-drop file inspection, and fluid animations.
+    </p>
+
+    <!-- Download CTA Button Group -->
+    <div class="flex flex-col sm:flex-row items-center gap-4 mb-4">
+      <a href="downloads/K2DynamicIsland-Setup.exe" class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-black font-extrabold text-base flex items-center justify-center gap-3 shadow-xl shadow-cyan-500/25 transition duration-200 transform hover:-translate-y-0.5">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <polyline points="7 10 12 15 17 10"></polyline>
+          <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+        <span>Download for Windows (64-bit)</span>
+      </a>
+      <a href="#features" class="w-full sm:w-auto px-6 py-4 rounded-2xl bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-800 font-semibold text-sm transition">
+        Explore Features ↓
+      </a>
+    </div>
+
+    <!-- Meta specs info -->
+    <div class="flex flex-wrap justify-center items-center gap-x-6 gap-y-2 text-xs text-slate-500 mb-16">
+      <span class="flex items-center gap-1.5"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> Installer Size: 488 KB</span>
+      <span>&bull;</span>
+      <span class="flex items-center gap-1.5"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg> Zero Telemetry</span>
+      <span>&bull;</span>
+      <span class="flex items-center gap-1.5"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg> Native C++17 Speed</span>
+      <span>&bull;</span>
+      <span class="flex items-center gap-1.5"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg> Windows 10 &amp; 11</span>
+    </div>
+
+    <!-- Hero Banner Showcase -->
+    <div class="w-full relative mb-20 group">
+      <div class="absolute -inset-1 bg-gradient-to-r from-cyan-500/30 via-indigo-500/20 to-purple-500/30 rounded-3xl blur-2xl opacity-60 group-hover:opacity-90 transition duration-700 pointer-events-none"></div>
+      <div class="relative w-full rounded-2xl overflow-hidden border border-slate-800 shadow-2xl bg-slate-950">
+        <img src="preview.jpg" alt="K2 Dynamic Island Desktop Preview" class="w-full h-auto object-cover transform group-hover:scale-[1.01] transition duration-500">
+      </div>
+    </div>
+
+    <!-- Feature Pillars Section -->
+    <div id="features" class="w-full text-left pt-6">
+      <div class="text-center mb-14">
+        <span class="text-xs uppercase font-bold tracking-widest text-cyan-400 mb-2 block">Designed for Windows Excellence</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Engineered for Elegance &amp; Productivity</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <!-- Feature 1: Real-time Audio Activity -->
+        <div class="p-8 rounded-3xl bg-slate-900/60 border border-slate-800/80 hover:border-cyan-500/40 transition duration-300">
+          <div class="w-12 h-12 rounded-2xl bg-cyan-950/80 border border-cyan-800/60 flex items-center justify-center text-cyan-400 mb-6">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Live Audio Activity &amp; Marquee Ticker</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-4">
+            Detects active audio playback via WASAPI in real-time. Features smooth marquee track scrolling when playing music on YouTube, Spotify, VLC, and browsers, and automatically halts equalizer bars when playback is paused.
+          </p>
+          <div class="flex items-center gap-2 text-xs font-mono text-cyan-400">
+            <span>&bull; YouTube &bull; Spotify &bull; VLC &bull; Windows Audio</span>
+          </div>
+        </div>
+
+        <!-- Feature 2: Drag & Drop Files -->
+        <div class="p-8 rounded-3xl bg-slate-900/60 border border-slate-800/80 hover:border-cyan-500/40 transition duration-300">
+          <div class="w-12 h-12 rounded-2xl bg-indigo-950/80 border border-indigo-800/60 flex items-center justify-center text-indigo-400 mb-6">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Instant File Drop &amp; Clipboard Station</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-4">
+            Drag any file or folder directly onto the floating capsule. Inspect full Unicode paths, one-click copy paths formatted for terminal or coding use, and jump directly to containing folders in Windows Explorer.
+          </p>
+          <div class="flex items-center gap-2 text-xs font-mono text-indigo-400">
+            <span>&bull; OLE DragTarget &bull; Path Validation &bull; Explorer Reveal</span>
+          </div>
+        </div>
+
+        <!-- Feature 3: Dynamic Island Pill -->
+        <div class="p-8 rounded-3xl bg-slate-900/60 border border-slate-800/80 hover:border-cyan-500/40 transition duration-300">
+          <div class="w-12 h-12 rounded-2xl bg-sky-950/80 border border-sky-800/60 flex items-center justify-center text-sky-400 mb-6">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Custom Animated Wallpapers &amp; Themes</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-4">
+            Personalize your island with Spider-Verse, Cat, and Stitch dynamic animated GIF backdrops, or switch between Dark/Light modes with ultra-slick frosted acrylic glass blur layers.
+          </p>
+          <div class="flex items-center gap-2 text-xs font-mono text-sky-400">
+            <span>&bull; Frosted Glass &bull; Lively Aurora &bull; Custom Photo/GIF</span>
+          </div>
+        </div>
+
+        <!-- Feature 4: Native Windows C++17 Speed -->
+        <div class="p-8 rounded-3xl bg-slate-900/60 border border-slate-800/80 hover:border-cyan-500/40 transition duration-300">
+          <div class="w-12 h-12 rounded-2xl bg-emerald-950/80 border border-emerald-800/60 flex items-center justify-center text-emerald-400 mb-6">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Hardened &amp; High-Performance Binary</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-4">
+            Compiled natively with C++17, Win32 APIs, and WebView2. Protected with hardware breakpoint detection, anti-debugging loops, ASLR/DEP hardening, and zero background CPU usage when idle.
+          </p>
+          <div class="flex items-center gap-2 text-xs font-mono text-emerald-400">
+            <span>&bull; Stripped Binary &bull; Anti-Debug Watchdog &bull; 488 KB</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Final Call to Action -->
+    <div class="w-full max-w-4xl mt-20 p-10 rounded-3xl bg-gradient-to-b from-slate-900 to-slate-950 border border-slate-800 text-center relative overflow-hidden shadow-2xl">
+      <h3 class="text-2xl sm:text-3xl font-extrabold text-white mb-4">Get K2 Dynamic Island Today</h3>
+      <p class="text-slate-400 text-sm sm:text-base max-w-xl mx-auto mb-8">
+        Free forever, lightweight, and built with care for Windows power users. Download the standalone setup installer and start experiencing desktop fluidity.
+      </p>
+      <a href="downloads/K2DynamicIsland-Setup.exe" class="inline-flex items-center gap-3 px-8 py-4 rounded-2xl bg-cyan-500 hover:bg-cyan-400 text-black font-extrabold text-base shadow-xl shadow-cyan-500/20 transition duration-200">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+        <span>Download K2DynamicIsland-Setup.exe (488 KB)</span>
+      </a>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="max-w-6xl mx-auto w-full px-6 py-8 border-t border-slate-800/80 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+    <div>
+      &copy; 2026 K2 Dynamic Island. Created by <a href="https://kimsokun.github.io/" target="_blank" class="text-cyan-400 hover:underline">Kim Sokun</a>.
+    </div>
+    <div class="flex items-center gap-6">
+      <a href="downloads/K2DynamicIsland-Setup.exe" class="hover:text-slate-300 transition">Direct Download</a>
+      <a href="https://github.com/KimSokun/K2DynamicIsland" target="_blank" class="hover:text-slate-300 transition">GitHub Source (Private)</a>
+      <a href="https://kimsokun.github.io/" target="_blank" class="hover:text-slate-300 transition">Developer Portfolio</a>
+    </div>
+  </footer>
+
+</body>
+</html>
